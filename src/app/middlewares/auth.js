@@ -19,6 +19,6 @@ export default async (req, res, next) => {
 
     return next();
   } catch (err) {
-    return res.status(401).sjon({ error: 'Token Invalid' });
+    return res.status(401).json({ error: 'Token Invalid' });
   }
 };
